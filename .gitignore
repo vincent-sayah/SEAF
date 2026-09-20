@@ -1,0 +1,13 @@
+node_modules/
+dist/
+www/
+android/
+ios/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+coverage/
