@@ -1,0 +1,93 @@
+:root {
+  --seaf-navy: #071d3b;
+  --seaf-blue: #0f4c81;
+  --seaf-red: #d22630;
+  --seaf-surface: #f5f7fa;
+  --seaf-text: #10233f;
+}
+
+html,
+body,
+#root,
+ion-app {
+  width: 100%;
+  min-height: 100%;
+  background: var(--seaf-surface);
+}
+
+body {
+  margin: 0;
+  color: var(--seaf-text);
+}
+
+.seaf-toolbar {
+  --background: var(--seaf-navy);
+  --color: #ffffff;
+}
+
+.seaf-title-dot {
+  color: var(--seaf-red);
+}
+
+.seaf-content {
+  --background: var(--seaf-surface);
+}
+
+.seaf-shell {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.seaf-intro {
+  margin-bottom: 18px;
+}
+
+.seaf-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.seaf-card {
+  margin: 0;
+}
+
+.seaf-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.seaf-status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  display: inline-block;
+  background: var(--seaf-red);
+}
+
+.seaf-status-dot.online {
+  background: #238636;
+}
+
+.seaf-probe-list {
+  margin-top: 20px;
+}
+
+.seaf-probe-id {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.78rem;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 820px) {
+  .seaf-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .seaf-shell {
+    padding: 14px;
+  }
+}
